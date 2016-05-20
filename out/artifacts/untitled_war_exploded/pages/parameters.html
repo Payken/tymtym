@@ -1,0 +1,50 @@
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+
+        <form role="form"  ng-submit="processForm()">
+
+            <div class="form-group">
+                <label for="fileformat">Rozszerzenie</label>
+                <select id="fileformat" ng-model="fileformat" name="fileformat" class="form-control">
+
+                    <option class="form-control" value="csv" selected>CSV</option>
+                    <option class="form-control" value="txt">TXT</option>
+
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label for="correlation">Korelacja</label>
+                <select id="correlation" ng-model="correlation" name="correlation" class="form-control">
+
+                    <option class="form-control" value="true" selected>włączona</option>
+                    <option class="form-control" value="false">wyłączona</option>
+
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label for="background">Tło</label>
+                <select id="background" ng-model="background" name="background" class="form-control">
+
+                    <option class="form-control" value="A" selected>białe</option>
+                    <option class="form-control" value="B">nie białe</option>
+
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label for="labels">Etykiety</label>
+                <select id="labels" ng-model="labels" name="labels" class="form-control">
+
+                    <option class="form-control" value="C" selected>zwykle</option>
+                    <option class="form-control" value="D">czerwone</option>
+
+                </select>
+
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+
+</div>

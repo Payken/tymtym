@@ -1,0 +1,35 @@
+
+<div class="jumbotron text-center">
+    <h1>ADD Page</h1>
+
+    <h2>Operacje dodawania zbiorów i wartości</h2>
+
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <h3>Dodaj wartość do zbioru</h3>
+            <form ng-submit="processForm()">
+                <select ng-model="setName" name="set" class="form-control">
+                    <option ng-repeat="set in sets" class="form-control" value="{{set}}">{{set}}</option>
+                </select>
+<p>wybierz drugi zbior</p>
+                <select ng-model="setName2" name="set" class="form-control">
+                    <option ng-repeat="set in sets" class="form-control" value="{{set}}">{{set}}</option>
+                </select>
+
+
+                <button type="submit"  class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="tab-content">
+    <div ng-repeat="(key,value) in stats">
+        <!--TODO podpięcie etykiet here -->
+        <span ng-if="key=='average'">{{labels.average}}</span>
+        <span ng-if="key=='median'">{{labels.median}}</span>
+        <span ng-if="key=='correlation'">{{labels.correlation}}</span>
+        <span ng-if="key=='correlationWith'">{{labels.correlationWith}}</span>
+        <span ng-if="key=='name'">{{labels.name}}</span>
+     : <p>{{value}}</p></div>
+    </div>
+</div>

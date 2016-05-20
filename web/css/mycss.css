@@ -1,0 +1,15 @@
+.mynav{
+    background-color: #F0f0f0;
+    height: 80px;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 80px;
+}
+.container{
+
+
+}
+.A{background-color: white;}
+.B{background-color: aliceblue;}
+.C{}
+.D{color: red !important;}
