@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9dfef82a-f3c0-46e4-8d95-f1847c749dfb" name="Default" comment="Deploy">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="9dfef82a-f3c0-46e4-8d95-f1847c749dfb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
@@ -938,7 +937,7 @@
       <workItem from="1462564519312" duration="611000" />
       <workItem from="1463779783766" duration="2593000" />
       <workItem from="1463782408120" duration="627000" />
-      <workItem from="1463783064959" duration="929000" />
+      <workItem from="1463783064959" duration="947000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy">
       <created>1463780541834</created>
@@ -988,11 +987,17 @@
       <option name="project" value="LOCAL" />
       <updated>1463783522650</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Init">
+      <created>1463784005726</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1463784005726</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95486000" />
+    <option name="totallyTimeSpent" value="95504000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1079,9 +1084,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deploy" />
+    <MESSAGE value="Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
