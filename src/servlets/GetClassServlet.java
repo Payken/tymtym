@@ -14,7 +14,7 @@ import java.io.IOException;
 /**
 
  */
-@WebServlet(name = "getClass", urlPatterns = "/getclass")
+@WebServlet(name = "getClass", urlPatterns = "/getclasss")
 public class GetClassServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
