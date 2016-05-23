@@ -31,16 +31,15 @@
     </dependencies>
     <name>fdarmoch Maven Webapp</name>
     <url>http://maven.apache.org</url>
-    <build>
-        <finalName>fdarmoch</finalName>
-        <sourceDirectory>src/</sourceDirectory>
+    <build><sourceDirectory>src/</sourceDirectory>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.6</version>
                 <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <webXml>src/../web/WEB-INF/web.xml</webXml>
                 </configuration>
+                <version>2.6</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -50,6 +49,7 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 </project>
