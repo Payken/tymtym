@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl" ng-app="scotchApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Timy</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/mycss.css">
+    <!-- load angular and angular route via CDN -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+</head>
+<body ng-controller="mainController" class="{{class.background}} {{class.labels}}">
+<!--<div class="header mynav">-->
+    <!--<div class="container"> <a href="index.jsp" class="tab">Strona Główna</a> </div>-->
+
+
+<!--</div>-->
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#add"><i class="fa fa-shield"></i> Dodaj zbior</a></li>
+                <li><a href="#addvalue"><i class="fa fa-shield"></i> Dodaj wartosc</a></li>
+                <li><a href="#del"><i class="fa fa-shield"></i> Usun wartosc</a></li>
+                <li><a href="#stats"><i class="fa fa-comment"></i> Statystyki</a></li>
+                <li><a href="#labels"><i class="fa fa-comment"></i> Etykiety</a></li>
+                <li><a href="#parameters"><i class="fa fa-comment"></i> Parametry</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+
+
+<div id="main">
+    <div ng-view></div>
+</div>
+
+</body>
+</html>

@@ -1,9 +1,10 @@
-package servlets;
+package main.java.servlets;
 
-import com.fasterxml.jackson.databind.JsonMappingException;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import main.AddMap;
 import main.staticContent.Sets;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

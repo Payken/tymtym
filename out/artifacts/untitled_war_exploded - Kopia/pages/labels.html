@@ -1,0 +1,45 @@
+
+<div class="jumbotron text-center">
+    <h1>Labels Page</h1>
+
+    <h2>Operacje edycji etykiet</h2>
+
+
+    <!--<div class="tab-content">-->
+        <!--<div id="home" class="tab-pane fade in active">-->
+            <!--<h3>Dodaj wartość do zbioru</h3>-->
+            <!--<form ng-submit="processForm()">-->
+
+
+                <!--<button type="submit"  class="btn btn-default">Submit</button>-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="tab-content">
+    <div>
+            <!--TODO podpięcie etykiet here -->
+            <form ng-submit="processForm()">
+                <label>{{labels.average}}</label>
+                <input type="text" ng-model="average">
+                <label>{{labels.median}}</label>
+                <input type="text" ng-model="median">
+                <label>{{labels.correlation}}</label>
+                <input type="text" ng-model="corellation">
+                <label>{{labels.insertvalue}}</label>
+                <input type="text" ng-model="insertvalue">
+                <label>{{labels.name}}</label>
+                <input type="text" ng-model="name">
+                <label>{{labels.correlationWith}}</label>
+                <input type="text" ng-model="corellationwith">
+                <button type="submit"  class="btn btn-default">Submit</button>
+            </form>
+
+        <div ng-repeat="(key,value) in stats">
+        <span ng-if="key=='average'">{{labels.average}}</span>
+        <span ng-if="key=='median'">{{labels.median}}</span>
+        <span ng-if="key=='correlation'">{{labels.correlation}}</span>
+        <!--<span ng-if="key=='correlationWith'">Srednia</span>-->
+        <span ng-if="key=='name'">{{labels.name}}</span>
+     : <p>{{value}}</p></div>
+    </div>
+</div>

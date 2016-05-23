@@ -12,4 +12,5 @@
         <servlet-name>LogServlet</servlet-name>
         <url-pattern>/log</url-pattern>
     </servlet-mapping>
+
   </web-app>
